@@ -48,7 +48,7 @@ function Login({ setUser }) {
        autoComplete="current-password"
    />
     
-    <button type="submit">Sign Up</button>
+    <button type="submit">Welcome</button>
    </div>
  </div>
  </form>

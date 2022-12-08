@@ -21,9 +21,9 @@ function Checkout() {
        </div>
    </div>
 
-   <div className="concept">
+   <div className="box">
 
-           <div className="box">
+           <div className="projects">
                <div className="card">
                    <img className="coffee" src={coffee} alt="coffee"></img>
                    <div className="container">

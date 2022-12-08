@@ -28,7 +28,7 @@ function SignUp({ setUser }) {
   return (
     <>
 
-    <NavBar />
+  
     <div className="body-form">
     <div className="container">
       <div className="title">SignUp</div>

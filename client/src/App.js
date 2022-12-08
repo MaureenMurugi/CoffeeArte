@@ -20,7 +20,7 @@ function App() {
     });
   }, []);
 
-  if(!user) return <Login setUser={setUser} />
+  // if(!user) return <Login setUser={setUser} />
 
   return (
     <div> 

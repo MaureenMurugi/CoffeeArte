@@ -23,7 +23,7 @@ function Login({ setUser }) {
   return (
     <>
 
-< NavBar/>
+
 
 <div className="body-form">
 <div className="container">

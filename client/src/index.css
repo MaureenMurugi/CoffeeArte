@@ -11,3 +11,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+li,a,button {
+  font-weight: 500;
+  font-size: 16px;
+  color: #FB9F48;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo{
+  cursor: pointer;
+  color: #f5c645;
+}
+
+.navnav {
+  color: #56190C;
+}
+
+li{
+  display: inline-block;
+  padding: 0px 20px;
+  transition: all 0.3s ease 0s;
+}
+.cta{
+  background-color: #FBA350;
+  color: black;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-family: 'Tangerine', serif;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform .4s;
+  box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+}
+.cta :hover{
+  transform:scale(1.2);
+}
+
+/* Coffees */
+.projects{
+  background: linear-gradient(135deg, #fce6c3, #FBA350);
+  width: 100%;
+  padding: 40px 0px;
+}
+.projo{
+  color: black;
+  font-size: 60px;
+  font-style: italic;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+.box{
+  display: flexbox;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+.card{
+  height: 350px;
+  width: 325px;
+  padding: 20px 35px;
+  background-color: #fce7f3;
+  border-radius: 20px;
+  margin: 15px;
+  overflow: scroll;
+  text-align: center;
+
+}
+.avatar{
+  height: 225px;
+  width: 225px;
+
+}
+
+.price{
+  color: chocolate;
+  font-weight: bold;
+}

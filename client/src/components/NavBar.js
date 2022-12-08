@@ -14,7 +14,7 @@ function NavBar({user, setUser}) {
     return (
         <header>
           <NavLink to="/home"><h2 className="logo">coffee<span className="navnav">Cafe</span></h2></NavLink> 
-          <NavLink to="/checkout"><h2 className="logo">coffee<span className="navnav">Cart</span></h2></NavLink> 
+          {/* <NavLink to="/checkout"><h2 className="logo">coffee<span className="navnav">Cart</span></h2></NavLink>  */}
             <nav>
             {user ? (
           <button to="/login" onClick={handleLogoutClick}>Logout</button>

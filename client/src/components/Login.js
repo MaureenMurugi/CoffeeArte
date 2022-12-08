@@ -1,3 +1,4 @@
+import NavBar from "./NavBar";
 import React, { useState } from "react";
 
 function Login({ setUser }) {
@@ -20,28 +21,43 @@ function Login({ setUser }) {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <h1>Login</h1>
-        <label htmlFor="username">Username</label>
-        <input
-          type="text"
-          id="username"
-          autoComplete="off"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          autoComplete="current-password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit">Login</button>
-      </form>
+    <>
+
+< NavBar/>
+
+<div className="body-form">
+<div className="container">
+ <div className="title">Login</div>
+ <form name="myForm" className="form" onSubmit={handleSubmit}>
+ <div className="user-details">
+   <div className="input-box">
+     <label htmlFor="username">Username</label>
+     <input
+     type="text"
+     id="username"
+     autocomplete="off"
+     value={username}
+     onChange={(e) => setUsername(e.target.value)}></input><br></br>
+
+     <label htmlFor="password">Password</label>
+      <input
+       type="password"
+       id="password"
+       value={password}
+       onChange={(e) => setPassword(e.target.value)}
+       autoComplete="current-password"
+   />
+    
+    <button type="submit">Sign Up</button>
+   </div>
+ </div>
+ </form>
+</div>
+
     </div>
+    
+    </>
+    
   );
 }
 

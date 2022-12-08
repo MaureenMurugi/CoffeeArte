@@ -1,4 +1,3 @@
-
 import image1 from "../images/image1.jpg"
 import coffee from "../images/cofee.jpeg"
 import phone from "../images/phone.png"
@@ -40,9 +39,9 @@ function Checkout() {
                <div className="card">
                    <div className="container">
                        <h4><b>Contact-Us</b></h4>
-                       <img className="icon" src={phone} alt="phone"></img>
+                       <img classname="icon" src={phone} alt="phone"></img>
                        <p>+254 789 456</p>
-                       <img className="icon" src={email} alt="email"></img>
+                       <img classname="icon" src={email} alt="email"></img>
                        <p>cafecofee@gmail.com</p>
                        
                    </div>

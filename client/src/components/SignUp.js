@@ -1,3 +1,4 @@
+import NavBar from "./NavBar";
 import React, { useState } from "react";
 
 function SignUp({ setUser }) {
@@ -25,36 +26,49 @@ function SignUp({ setUser }) {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <h1>Sign Up</h1>
-        <label htmlFor="username">Username</label>
-        <input
+    <>
+
+    <NavBar />
+    <div className="body-form">
+    <div className="container">
+      <div className="title">SignUp</div>
+      <form name="myForm" className="form" onSubmit={handleSubmit}>
+      <div className="user-details">
+        <div className="input-box">
+          <label htmlFor="username">Username</label>
+          <input
           type="text"
           id="username"
-          autoComplete="off"
+          autocomplete="off"
           value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          onChange={(e) => setUsername(e.target.value)}></input><br></br>
+
+          <label htmlFor="password">Password</label>
+           <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            autoComplete="current-password"
         />
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          autoComplete="current-password"
-        />
-        <label htmlFor="password">Password Confirmation</label>
-        <input
+          <label htmlFor="password">Password Confirmation</label>
+          <input
           type="password"
           id="password_confirmation"
           value={passwordConfirmation}
           onChange={(e) => setPasswordConfirmation(e.target.value)}
           autoComplete="current-password"
         />
-        <button type="submit">Sign Up</button>
+         <button type="submit">Sign Up</button>
+        </div>
+      </div>
       </form>
     </div>
+
+    </div>
+   
+    </>
+   
   );
 }
 
